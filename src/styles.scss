@@ -4,3 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media screen and(max-width: 1000px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  html {
+    font-size: 10px !important;
+  }
+}

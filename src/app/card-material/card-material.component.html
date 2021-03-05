@@ -1,0 +1,38 @@
+<mat-card class="card">
+  <div class="content-wrapper">
+    <div class="title">
+      <mat-card-title>{{contents.title}}</mat-card-title>
+      <mat-card-actions>
+        <button mat-flat-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-card-actions>
+    </div>
+    <mat-card-content>
+      <div class="left">
+        <div class="use">
+          <div class="with-icon">
+            <fa-icon [icon]="python" class="icon code-icon"></fa-icon>
+            <div class="code">{{contents.code}}</div>
+          </div>
+          <div class="types">
+            #{{contents.types.join(', ')}}
+          </div>
+        </div>
+        <div class="info">
+          <div class="with-icon">
+            <fa-icon [icon]="card" class="icon"></fa-icon>
+            <div class="date">{{contents.date}}</div>
+          </div>
+          <div class="with-icon">
+            <fa-icon [icon]="clock" class="icon"></fa-icon>
+            <div class="time">{{contents.time}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img mat-card-image src="assets/img/{{contents.img}}" alt="image">
+      </div>
+    </mat-card-content>
+  </div>
+</mat-card>
